@@ -1,0 +1,16 @@
+<h1>Hello from the Partial Index. Let's rank how I feel about all these languages.</h1>
+<form name="survey-form" action="/" method="POST">
+    ${data.map(topic => {
+        return `<p>
+                    I am ${topic.rankings} at
+                    <label>
+                        ${topic.language}.
+                        <select name="${topic.language}">
+                            ${statusData.map(status => `<option value="${status.id}" ${topic.status_id === status.id ? 'selected' : ''}>${status.rankings}</option>`).join('')}
+                        </select>
+                    </label>
+                </p>`
+    }).join('')}
+    <button type="submit">Submit</button>
+</form>
+

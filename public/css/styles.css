@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+form {
+    line-height: 2;
+    /* display: flex;
+    flex-direction: row;
+    align-content: space-between;
+     */
+}
+
+h1 {
+    color: gainsboro;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding-bottom: .5rem;
+}
+.dark_theme{
+    background: #2a2a2d;
+    color: gainsboro;
+}
